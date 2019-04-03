@@ -1,0 +1,433 @@
+@main-color: #e92322;
+
+.text-danger {
+    color: @main-color;
+}
+
+a {
+    color: #666;
+
+    &:hover {
+        color: #666;
+        text-decoration: none;
+    }
+
+    &:focus {
+        color: #666;
+        text-decoration: none;
+    }
+}
+
+#header {
+    border-bottom: 1px solid #ccc;
+
+    .container {
+        .row {
+            >div {
+                font-size: 12px;
+                line-height: 40px;
+
+                &~div {
+                    border-left: 1px solid #ccc;
+                }
+
+                .btn-link {
+                    // display: inline-block;
+                    // width: 50px;
+                    color: #666;
+                }
+
+                .mobile-link {
+                    display: block;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: none;
+                        z-index: 999;
+                    }
+
+                    &:hover {
+                        img {
+                            display: block;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+#nav {
+    background-color: #fff;
+    margin-bottom: 0;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+
+    // 头部
+    .container {
+        .navbar-header {
+            .navbar-toggle {
+                margin-top: 23px;
+            }
+
+            .navbar-brand {
+                line-height: 50px;
+                height: 80px;
+
+                .icon-icon {
+                    font-size: 30px;
+                    color: @main-color;
+
+                }
+
+                .icon-logo {
+                    font-size: 28px;
+                    color: #777;
+                }
+            }
+        }
+    }
+
+
+
+    // 身体
+    .navbar-collapse {
+        .navbar-nav {
+
+            li>a {
+                height: 80px;
+                line-height: 50px;
+                font-size: 14px;
+
+                &:hover {
+                    border-bottom: 2px solid @main-color;
+                }
+            }
+
+            .active>a {
+                border-bottom: 2px solid @main-color;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+#media {
+    padding: 20px 0;
+
+    .container {
+        .row {
+            >div {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+#booking {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    padding: 15px 0;
+
+    .container {
+        .pull-left {}
+
+        .pull-right {}
+    }
+}
+
+#tap {
+    background-color: #eee;
+    padding: 40px 0;
+
+    >.container {
+        .swiper-container{
+            width: 100%;
+            .swiper-wrapper{
+                .swiper-slide{
+                    width: auto;
+                    ul{
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .nav-tabs {
+            li {
+                a {
+                    font-size: 18px;
+                    font-weight: bolder;
+                    color: #000;
+                    height: 48px;
+                }
+
+                &.active {
+                    a {
+                        background-color: #eee;
+                        border: 1px solid transparent;
+                        border-bottom: 3px solid @main-color;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                >.container {
+                    .row {
+                        >div {
+
+                            .product {
+                                background-color: #fff;
+                                margin-top: 30px;
+                                display: flex;
+                                // padding: 0;
+
+                                // margin-right: 20px;
+                                // 左边
+                                .left {
+                                    flex: 1;
+                                    padding: 15px;
+
+                                    .title {
+                                        padding: 8px 0;
+                                    }
+
+                                    .cintent {
+                                        .row {
+                                            >div {
+
+                                                p {
+                                                    margin-bottom: 0;
+                                                }
+                                            }
+
+                                            &>div:nth-child(-n+3) {
+                                                //前两个div
+                                                margin-bottom: 5px;
+                                            }
+                                        }
+
+                                    }
+                                }
+
+                                //右边
+                                .right {
+                                    width: 120px;
+                                    border-left: 1px dashed #666;
+                                    position: relative;
+
+                                    // 工具提示栏
+                                    .tooltips {
+                                        position: absolute;
+                                        top: 20px;
+                                        left: 20px;
+
+                                        .btn-default:first-child {
+                                            color: @main-color;
+                                            border: 1px solid @main-color;
+                                            background-color: #fff;
+                                            outline-style: none;
+                                        }
+
+                                        .btn-default:last-of-type {
+                                            color: green;
+                                            border: 1px solid green;
+                                            background-color: #fff;
+                                            outline-style: none;
+                                        }
+                                    }
+
+                                    .conter {
+                                        position: absolute;
+                                        left: 50%;
+                                        margin-left: -17%;
+                                        top: 50%;
+                                        margin-top: -25%;
+
+                                        strong {
+                                            font-size: 30px;
+                                        }
+                                    }
+
+                                    &::before,
+                                    &::after {
+                                        content: "";
+                                        width: 16px;
+                                        height: 16px;
+                                        border-radius: 50%;
+                                        background-color: #eee;
+                                        display: block;
+                                        position: absolute;
+                                        left: 0;
+
+                                        margin-left: -8px;
+                                        margin-top: -8px;
+                                    }
+
+                                    &::after {
+                                        bottom: 0;
+                                        margin-bottom: -8px;
+                                    }
+                                }
+
+                                &.active {
+                                    background-color: @main-color;
+                                    color: #fff;
+                                    // &::before{
+                                    //     content: "\e915";
+                                    //     display: block;
+                                    //     width: 50px;
+                                    //     height: 50px;
+                                    // }
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#news {
+    padding: 40px 0;
+    .container {
+        .row {
+            >div {
+                h4 {
+                    border-bottom: 1px dashed #ccc;
+                    padding-bottom: 10px;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        border: 1px solid #ccc;
+                        position: absolute;
+                        right: -10px;
+                        bottom: -5px;
+                    }
+                }
+
+                .tooltap {
+                    @media (max-width:991px) {
+                        .nav-tabs{
+                            li{
+                                width: 25%;
+                                display: flex; //用伸缩布局让a标签居中
+                                justify-content: center;
+                            }
+                        }
+                    }
+                    .nav-tabs {
+                        border-bottom: 0;
+
+                        li {
+                            a {
+                                border-radius: 50%;
+                                border: 0;
+                                margin-bottom: 10px;
+
+                                i {
+                                    font-size: 30px;
+                                }
+
+                                &:hover {
+                                    background-color: @main-color;
+                                    color: #eee
+                                }
+                            }
+
+                            &.active {
+                                a {
+                                    background-color: @main-color;
+
+                                    i {
+                                        color: #eee
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tab-content {
+                    .tab-pane {
+                        .list-unstyled {
+                            li {
+                                font-size: 18px;
+                                margin-bottom: 10px;
+                                padding-left: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    .container {
+        .row {
+            h2 {}
+
+            > div {
+                .tubiap {
+                    display: flex;
+                    a {
+                        flex:1;
+                        &:hover{
+                            color: @main-color;
+                        }
+                        i {
+                            font-size: 60px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+//模态框的遮罩层
+#myModal{
+    .modal-dialog{
+        .modal-content{
+            .modal-header{
+                button{
+
+                }
+                h4{
+
+                }
+            }
+            .modal-body{
+
+            }
+            .modal-footer{
+                .btn-default{
+
+                }
+                .btn-primary{
+
+                }
+            }
+        }
+    }
+}

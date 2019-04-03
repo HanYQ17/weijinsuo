@@ -1,0 +1,246 @@
+.text-danger {
+  color: #e92322;
+}
+a {
+  color: #666;
+}
+a:hover {
+  color: #666;
+  text-decoration: none;
+}
+a:focus {
+  color: #666;
+  text-decoration: none;
+}
+#header {
+  border-bottom: 1px solid #ccc;
+}
+#header .container .row > div {
+  font-size: 12px;
+  line-height: 40px;
+}
+#header .container .row > div ~ div {
+  border-left: 1px solid #ccc;
+}
+#header .container .row > div .btn-link {
+  color: #666;
+}
+#header .container .row > div .mobile-link {
+  display: block;
+  position: relative;
+}
+#header .container .row > div .mobile-link img {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 999;
+}
+#header .container .row > div .mobile-link:hover img {
+  display: block;
+}
+#nav {
+  background-color: #fff;
+  margin-bottom: 0;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+}
+#nav .container .navbar-header .navbar-toggle {
+  margin-top: 23px;
+}
+#nav .container .navbar-header .navbar-brand {
+  line-height: 50px;
+  height: 80px;
+}
+#nav .container .navbar-header .navbar-brand .icon-icon {
+  font-size: 30px;
+  color: #e92322;
+}
+#nav .container .navbar-header .navbar-brand .icon-logo {
+  font-size: 28px;
+  color: #777;
+}
+#nav .navbar-collapse .navbar-nav li > a {
+  height: 80px;
+  line-height: 50px;
+  font-size: 14px;
+}
+#nav .navbar-collapse .navbar-nav li > a:hover {
+  border-bottom: 2px solid #e92322;
+}
+#nav .navbar-collapse .navbar-nav .active > a {
+  border-bottom: 2px solid #e92322;
+  background-color: #fff;
+}
+#media {
+  padding: 20px 0;
+}
+#media .container .row > div {
+  margin-bottom: 15px;
+}
+#booking {
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  padding: 15px 0;
+}
+#tap {
+  background-color: #eee;
+  padding: 40px 0;
+}
+#tap > .container .swiper-container {
+  width: 100%;
+}
+#tap > .container .swiper-container .swiper-wrapper .swiper-slide {
+  width: auto;
+}
+#tap > .container .swiper-container .swiper-wrapper .swiper-slide ul {
+  width: auto;
+}
+#tap > .container .nav-tabs li a {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #000;
+  height: 48px;
+}
+#tap > .container .nav-tabs li.active a {
+  background-color: #eee;
+  border: 1px solid transparent;
+  border-bottom: 3px solid #e92322;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product {
+  background-color: #fff;
+  margin-top: 30px;
+  display: flex;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .left {
+  flex: 1;
+  padding: 15px;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .left .title {
+  padding: 8px 0;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .left .cintent .row > div p {
+  margin-bottom: 0;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .left .cintent .row > div:nth-child(-n+3) {
+  margin-bottom: 5px;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right {
+  width: 120px;
+  border-left: 1px dashed #666;
+  position: relative;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right .tooltips {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right .tooltips .btn-default:first-child {
+  color: #e92322;
+  border: 1px solid #e92322;
+  background-color: #fff;
+  outline-style: none;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right .tooltips .btn-default:last-of-type {
+  color: green;
+  border: 1px solid green;
+  background-color: #fff;
+  outline-style: none;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right .conter {
+  position: absolute;
+  left: 50%;
+  margin-left: -17%;
+  top: 50%;
+  margin-top: -25%;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right .conter strong {
+  font-size: 30px;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right::before,
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product .right::after {
+  bottom: 0;
+  margin-bottom: -8px;
+}
+#tap > .container .tab-content .tab-pane > .container .row > div .product.active {
+  background-color: #e92322;
+  color: #fff;
+}
+#news {
+  padding: 40px 0;
+}
+#news .container .row > div h4 {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+  position: relative;
+}
+#news .container .row > div h4::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: -10px;
+  bottom: -5px;
+}
+@media (max-width: 991px) {
+  #news .container .row > div .tooltap .nav-tabs li {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+}
+#news .container .row > div .tooltap .nav-tabs {
+  border-bottom: 0;
+}
+#news .container .row > div .tooltap .nav-tabs li a {
+  border-radius: 50%;
+  border: 0;
+  margin-bottom: 10px;
+}
+#news .container .row > div .tooltap .nav-tabs li a i {
+  font-size: 30px;
+}
+#news .container .row > div .tooltap .nav-tabs li a:hover {
+  background-color: #e92322;
+  color: #eee;
+}
+#news .container .row > div .tooltap .nav-tabs li.active a {
+  background-color: #e92322;
+}
+#news .container .row > div .tooltap .nav-tabs li.active a i {
+  color: #eee;
+}
+#news .container .row > div .tab-content .tab-pane .list-unstyled li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+#footer .container .row > div .tubiap {
+  display: flex;
+}
+#footer .container .row > div .tubiap a {
+  flex: 1;
+}
+#footer .container .row > div .tubiap a:hover {
+  color: #e92322;
+}
+#footer .container .row > div .tubiap a i {
+  font-size: 60px;
+}
